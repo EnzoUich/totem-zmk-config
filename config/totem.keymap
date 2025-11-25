@@ -88,7 +88,7 @@
             display-name = "Base";
             bindings = <
            &kp Q          &kp W        &kp E           &kp R           &kp T          &kp Y        &kp U           &kp I           &kp O         &kp P
-           &hml LGUI A    &hml LALT S  &hml LCTRL D    &kp F           &kp F          &kp H        &hmr RSHFT J    &hmr RCTRL K    &hmr LALT L   &hmr RGUI SQT
+           &hml LGUI A    &hml LALT S  &hml LCTRL D    &hml LSHFT F    &kp G          &kp H        &hmr RSHFT J    &hmr RCTRL K    &hmr LALT L   &hmr RGUI SQT
 &trans     &kp Z          &kp X        &kp C           &kp V           &kp B          &kp N        &kp M           &kp COMMA       &kp DOT       &kp SLASH     &trans
                                        &lt MEDIA ESC   &lt NAV SPACE   &lt MOUSE TAB  &lt SYM RET  &lt NUM BSPC    &lt FUN DEL
             >;
