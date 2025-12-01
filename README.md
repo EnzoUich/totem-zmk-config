@@ -57,39 +57,48 @@ Firmware is automatically built via GitHub Actions on push to `totem-dongle` bra
 
 ## Downloading & Flashing Firmware
 
-Use the `download-firmware.sh` script to download and optionally flash firmware:
-
 ### Prerequisites
 
 - [GitHub CLI](https://cli.github.com/) (`gh`) installed
 - Authenticated with GitHub (`gh auth login`)
 
-### Usage
+### Download Firmware
 
 ```bash
-# Download firmware only
+# Download latest firmware from default branch
 ./download-firmware.sh
-
-# Download and flash to XIAO-SENSE dongle
-./download-firmware.sh --flash
 
 # Download from specific branch
 ./download-firmware.sh main
-
-# Download from specific branch and flash
-./download-firmware.sh main --flash
 ```
 
-### Flashing
+Firmware is downloaded to `firmware/` directory.
 
-When using `--flash`:
+### Flash Firmware
+
+```bash
+# Flash dongle
+./flash-firmware.sh dongle
+
+# Flash left keyboard half
+./flash-firmware.sh left
+
+# Flash right keyboard half
+./flash-firmware.sh right
+
+# Reset settings (clears all stored settings)
+./flash-firmware.sh reset
+```
+
+### Flashing Process
+
 1. Put your XIAO BLE Sense in bootloader mode (double-tap reset button)
 2. Device should mount as "XIAO-SENSE"
 3. Script will wait up to 10 seconds for device to appear
 4. Firmware will be copied automatically
 5. Device will reboot with new firmware
 
-Firmware is downloaded to `firmware/` directory.
+**Tip:** Use `./flash-firmware.sh reset` to clear all settings if you're experiencing issues after firmware updates.
 
 ## Configuration Files
 
