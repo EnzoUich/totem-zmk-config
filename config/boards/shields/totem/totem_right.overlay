@@ -7,9 +7,16 @@
 #include "totem.dtsi"
 
 / {
+    wakeup_keys: wakeup_keys {
+        compatible = "gpio-keys";
+        wakeup_key: wakeup_key {
+            gpios = <&xiao_d 0 GPIO_ACTIVE_HIGH>;
+        };
+    };
+
     wakeup_source: wakeup_source {
         compatible = "zmk,gpio-key-wakeup-trigger";
-        trigger = <&xiao_d 0 GPIO_ACTIVE_HIGH>;
+        trigger = <&wakeup_key>;
         wakeup-source;
         extra-gpios = <&xiao_d 8 GPIO_ACTIVE_HIGH>,
                       <&xiao_d 9 GPIO_ACTIVE_HIGH>,
