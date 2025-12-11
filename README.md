@@ -31,15 +31,16 @@ MEDIA-ESC  NAV-SPACE  MOUSE-TAB  |  SYM-RET  NUM-BSPC  FUN-DEL
 
 ## Homerow Mods
 
-Modified timeless homerow mods with same-hand modifiers enabled:
+Hybrid homerow mods configuration:
 
 - **Flavor**: `balanced`
 - **Tapping term**: 280ms
 - **Quick tap**: 175ms
 - **Prior idle**: 150ms
-- **Same-hand modifiers**: Enabled (no hold trigger restrictions)
+- **Left hand**: Same-hand modifiers enabled (no hold trigger restrictions) - allows Ctrl+Shift+V
+- **Right hand**: Urob's timeless config (opposite hand trigger only) - prevents accidental triggers
 
-This allows using Ctrl+Shift+V and other same-hand modifier combinations at the cost of potential accidental triggers during fast typing.
+This asymmetric configuration allows same-hand modifier combos on the left hand while maintaining reliable typing on the right hand.
 
 ## Hardware
 
