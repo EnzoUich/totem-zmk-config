@@ -41,16 +41,6 @@
     quick-tap-ms = <150>;
 };
 
-&mmv {
-    time-to-max-speed-ms = <200>;
-    acceleration-exponent = <2>;
-};
-
-&msc {
-    time-to-max-speed-ms = <200>;
-    acceleration-exponent = <1>;
-};
-
 / {
     behaviors {
         // Timeless homerow mods for left hand
