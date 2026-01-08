@@ -51,7 +51,11 @@ This asymmetric configuration allows same-hand modifier combos on the left hand 
 - **Features**:
   - Mouse/pointing support
   - ZMK Studio support (via dongle)
-  - Battery level monitoring
+  - Battery level monitoring with RGB LED indicator
+    - Uses [zmk-rgbled-widget](https://github.com/caksoylar/zmk-rgbled-widget) with rgbled_adapter
+    - Shows each keyboard's own battery level (left/right/dongle)
+    - High level: >80%, Low level: <20%
+    - Battery voltage: 4.2V (100%) to 3.45V (0%)
   - BT transmit power +8dBm
   - Deep sleep mode (30 minute idle timeout)
   - Wakeup-source configured (kscan)
