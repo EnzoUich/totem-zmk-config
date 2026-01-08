@@ -89,7 +89,7 @@
             display-name = "Base";
             bindings = <
         &kp Q        &kp W        &kp E          &kp R          &kp T            &kp Y        &kp U         &kp I         &kp O        &kp P
-        &hml LGUI A  &hml LALT S  &hml LCTRL D   &hml LSHFT F   &kp G            &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr LALT L  &hmr RGUI SEMICOLON
+        &hml LGUI A  &hml LALT S  &hml LCTRL D   &hml LSHFT F   &kp G            &kp H        &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMICOLON
 &trans  &kp Z        &kp X        &kp C          &kp V          &kp B            &kp N        &kp M         &kp COMMA     &kp DOT      &kp SLASH            &kp SQT
                                   &lt MEDIA ESC  &lt NAV SPACE  &lt MOUSE TAB    &lt SYM RET  &lt NUM BSPC  &lt FUN DEL
             >;
@@ -111,7 +111,7 @@
         &trans    &trans    &trans     &trans     &trans    &trans       &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP
         &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN
 &trans  &trans    &trans    &trans     &trans     &trans    &kp K_AGAIN  &kp LC(INS)     &kp LS(INS)     &kp LS(DEL)      &kp K_UNDO      &trans
-                            &trans     &trans     &trans    &mkp MB2     &mkp LCLK       &mkp RCLK
+                            &trans     &trans     &trans    &mkp MCLK    &mkp LCLK       &mkp RCLK
             >;
         };
 
