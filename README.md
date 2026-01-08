@@ -9,9 +9,9 @@ This configuration uses the **Miryoku layout** with QWERTY base layer and **INVE
 ### Base Layer (QWERTY)
 
 ```
-Q     W     E     R     T  |  Y     U     I     O     P
-GUI-A ALT-S CTRL-D SFT-F G  |  H  SFT-J CTRL-K ALT-L GUI-'
-Z     X     C     V     B  |  N     M     ,     .     /
+Q     W     E     R     T  |  Y     U     I      O      P
+GUI-A ALT-S CTRL-D SFT-F G  |  H  SFT-J CTRL-K RALT-L GUI-'
+Z     X     C     V     B  |  N     M     ,      .      /
 ```
 
 **Thumbs (layer-tap):**
@@ -24,6 +24,7 @@ MEDIA-ESC  NAV-SPACE  MOUSE-TAB  |  SYM-RET  NUM-BSPC  FUN-DEL
 - **BASE (0)**: QWERTY with home row mods (GACS order)
 - **NAV (1)**: Navigation INVERTEDT (arrows on right, modifiers on left)
 - **MOUSE (2)**: Mouse INVERTEDT (mouse controls on right, modifiers on left)
+  - Right thumb: MCLK (middle click), LCLK (left click), RCLK (right click)
 - **MEDIA (3)**: Media INVERTEDT (media controls on right, modifiers on left)
 - **NUM (4)**: Number pad with symbols
 - **SYM (5)**: Shifted symbols
