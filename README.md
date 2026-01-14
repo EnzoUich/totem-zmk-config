@@ -47,14 +47,8 @@ This asymmetric configuration allows same-hand modifier combos on the left hand 
 
 - **Board**: Seeeduino XIAO BLE
 - **Keyboard**: Totem (38 keys)
-- **Dongle**: Totem dongle for wireless receiver (USB connection to computer)
-- **Split Communication**: ESB (Enhanced ShockBurst) wireless protocol between halves and dongle
+- **Dongle**: Totem dongle for wireless receiver
 - **Features**:
-  - **ESB Split Transport** ([Enhanced ShockBurst](https://github.com/badjeff/zmk-feature-split-esb))
-    - Ultra-low latency wireless split communication
-    - Uses nRF proprietary 2.4GHz protocol instead of BLE
-    - Millisecond-level response time between halves and dongle
-    - More reliable than BLE split with automatic retransmission
   - Mouse/pointing support
   - ZMK Studio support (via dongle)
   - Battery level monitoring with RGB LED indicator
@@ -125,6 +119,4 @@ Firmware is downloaded to `firmware/` directory.
 
 - [Miryoku layout](https://github.com/manna-harbour/miryoku)
 - [urob's timeless homerow mods](https://github.com/urob/zmk-config)
-- [ZMK ESB Split Transport](https://github.com/badjeff/zmk-feature-split-esb)
-- [ZMK RGB LED Widget](https://github.com/caksoylar/zmk-rgbled-widget)
 - [ZMK Firmware](https://zmk.dev/)
