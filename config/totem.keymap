@@ -101,9 +101,9 @@
         nav_layer {
             display-name = "Nav";
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO
+        &trans    &trans    &trans     &trans     &trans    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO   &kp K_AGAIN
         &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &caps_word
-&trans  &trans    &trans    &trans     &trans     &trans    &kp HOME     &kp PG_DN    &kp PG_UP    &kp END      &kp INS     &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &kp HOME     &kp PG_DN    &kp PG_UP    &kp END      &kp INS      &trans
                             &trans     &trans     &trans    &kp RET      &kp BSPC     &kp DEL
             >;
         };
@@ -111,9 +111,9 @@
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &kp K_AGAIN     &kp LS(INS)     &kp LC(INS)     &kp LS(DEL)      &kp K_UNDO
+        &trans    &trans    &trans     &trans     &trans    &kp LS(INS)     &kp LC(INS)     &kp LS(DEL)     &kp K_UNDO       &kp K_AGAIN
         &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT  &trans          &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT  &trans           &trans
                             &trans     &trans     &trans    &mkp RCLK       &mkp LCLK       &mkp MCLK
             >;
         };
