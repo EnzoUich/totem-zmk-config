@@ -47,6 +47,17 @@ Hybrid homerow mods configuration:
 
 This asymmetric configuration allows same-hand modifier combos on the left hand while maintaining reliable typing on the right hand.
 
+## Customizations from Standard Miryoku
+
+This configuration includes several intentional deviations from vanilla Miryoku:
+
+1. **Asymmetric Homerow Mods**: Left hand allows same-hand modifier combos (no hold-trigger restrictions), right hand uses urob's timeless config with hold-trigger-key-positions (opposite hand trigger only)
+2. **Right Alt Key**: Added on base layer left hand pinkie bottom row position
+3. **Mouse Layer Top Row**: MB4/MB5 (back/forward buttons) instead of Undo/Redo on positions 4-5
+4. **Media Layer**: C_SLEEP key added on bottom right corner
+
+All other aspects (QWERTY alphas option, VI-style navigation, BUTTON layer, caps_word) follow standard Miryoku conventions.
+
 ## Hardware
 
 - **Board**: Seeeduino XIAO BLE
