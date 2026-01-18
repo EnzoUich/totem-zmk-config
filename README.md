@@ -4,7 +4,7 @@ ZMK firmware configuration for the Totem 38-key split keyboard with dongle suppo
 
 ## Layout
 
-This configuration uses the **Miryoku layout** with QWERTY base layer and **INVERTEDT** navigation/mouse/media layers. Home row mods are configured for same-hand modifier combinations.
+This configuration uses the **Miryoku layout** with QWERTY base layer and **VI-style (hjkl)** navigation/mouse/media layers. Home row mods are configured for same-hand modifier combinations.
 
 ### Base Layer (QWERTY)
 
@@ -22,10 +22,14 @@ MEDIA-ESC  NAV-SPACE  MOUSE-TAB  |  SYM-RET  NUM-BSPC  FUN-DEL
 ### Layers
 
 - **BASE (0)**: QWERTY with home row mods (GACS order)
-- **NAV (1)**: Navigation INVERTEDT (arrows on right, modifiers on left)
-- **MOUSE (2)**: Mouse INVERTEDT (mouse controls on right, modifiers on left)
+- **NAV (1)**: Navigation VI-style (hjkl arrows on home row, modifiers on left)
+  - Home row: H=left, J=down, K=up, L=right
+  - Clipboard keys on top row
+- **MOUSE (2)**: Mouse VI-style (mirrors navigation hjkl pattern)
+  - Home row: mouse movement in hjkl positions
   - Right thumb: RCLK (right click), LCLK (left click), MCLK (middle click)
-- **MEDIA (3)**: Media INVERTEDT (media controls on right, modifiers on left)
+- **MEDIA (3)**: Media VI-style (mirrors navigation, media controls on right)
+  - Home row: Prev, Vol Down, Vol Up, Next
 - **NUM (4)**: Number pad with symbols
 - **SYM (5)**: Shifted symbols
 - **FUN (6)**: Function keys (F1-F12)
