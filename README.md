@@ -24,7 +24,7 @@ MEDIA-ESC  NAV-SPACE  MOUSE-TAB  |  SYM-RET  NUM-BSPC  FUN-DEL
 - **BASE (0)**: QWERTY with home row mods (GACS order)
 - **NAV (1)**: Navigation INVERTEDT (arrows on right, modifiers on left)
 - **MOUSE (2)**: Mouse INVERTEDT (mouse controls on right, modifiers on left)
-  - Right thumb: MCLK (middle click), LCLK (left click), RCLK (right click)
+  - Right thumb: RCLK (right click), LCLK (left click), MCLK (middle click)
 - **MEDIA (3)**: Media INVERTEDT (media controls on right, modifiers on left)
 - **NUM (4)**: Number pad with symbols
 - **SYM (5)**: Shifted symbols

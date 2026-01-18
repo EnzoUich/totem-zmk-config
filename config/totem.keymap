@@ -114,7 +114,7 @@
         &trans    &trans    &trans     &trans     &trans    &trans       &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP
         &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN
 &trans  &trans    &trans    &trans     &trans     &trans    &kp K_AGAIN  &kp LS(INS)     &kp LC(INS)     &kp LS(DEL)      &kp K_UNDO      &trans
-                            &trans     &trans     &trans    &mkp MCLK    &mkp LCLK       &mkp RCLK
+                            &trans     &trans     &trans    &mkp RCLK    &mkp LCLK       &mkp MCLK
             >;
         };
 
