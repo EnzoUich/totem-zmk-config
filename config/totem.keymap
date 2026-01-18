@@ -21,6 +21,7 @@
 #define NUM         4
 #define SYM         5
 #define FUN         6
+#define BUTTON      7
 
 // Key position definitions for 38-key Totem layout
 
@@ -155,6 +156,16 @@
         &kp F11  &kp F4  &kp F5     &kp F6     &kp SLCK           &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
 &trans  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &trans  &trans     &trans     &trans    &trans    &trans
                          &kp K_APP  &kp SPACE  &kp TAB            &trans  &trans     &trans
+            >;
+        };
+
+        button_layer {
+            display-name = "Button";
+            bindings = <
+        &kp K_AGAIN   &kp K_UNDO   &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO   &kp K_AGAIN
+        &kp LGUI      &kp LALT     &kp LCTRL    &kp LSHFT    &none          &none        &kp LSHFT    &kp LCTRL    &kp LALT     &kp LGUI
+&trans  &kp K_AGAIN   &kp K_UNDO   &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO   &kp K_AGAIN   &trans
+                                   &mkp MCLK    &mkp LCLK    &mkp RCLK      &mkp RCLK    &mkp LCLK    &mkp MCLK
             >;
         };
     };
