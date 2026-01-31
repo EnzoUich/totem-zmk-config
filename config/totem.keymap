@@ -77,19 +77,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        button_layer_toggle_right {
-            bindings = <&tog 7>;
-            key-positions = <6 7>;
-        };
-
-        button_layer_toggle_left {
-            bindings = <&tog 7>;
-            key-positions = <2 3>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -167,20 +155,20 @@
         button_layer {
             display-name = "Button";
             bindings = <
-        &kp K_AGAIN  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &kp K_AGAIN
-        &kp LGUI     &kp LALT    &kp LCTRL    &kp LSHFT    &mo 8          &none        &kp LSHFT    &kp LCTRL    &kp LALT    &kp LGUI
-&trans  &kp K_AGAIN  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &kp K_AGAIN  &trans
-                                 &mkp MCLK    &mkp LCLK    &mkp RCLK      &mkp RCLK    &mkp LCLK    &mkp MCLK
+        &mkp MB5  &mkp MB4  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &mkp MB4  &mkp MB5
+        &kp LGUI  &kp LALT  &kp LCTRL    &kp LSHFT    &mo 8          &mo 8        &kp LSHFT    &kp LCTRL    &kp LALT  &kp LGUI
+&trans  &mkp MB5  &mkp MB4  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &mkp MB4  &mkp MB5  &trans
+                            &mkp MCLK    &mkp LCLK    &mkp RCLK      &mkp RCLK    &mkp LCLK    &mkp MCLK
             >;
         };
 
         scroll_layer {
             display-name = "Scroll";
             bindings = <
-        &kp K_AGAIN  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &kp K_AGAIN
-        &kp LGUI     &kp LALT    &kp LCTRL    &kp LSHFT    &mo 8          &none        &kp LSHFT    &kp LCTRL    &kp LALT    &kp LGUI
-&trans  &kp K_AGAIN  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &kp K_AGAIN  &trans
-                                 &mkp MCLK    &mkp LCLK    &mkp RCLK      &mkp RCLK    &mkp LCLK    &mkp MCLK
+        &mkp MB5  &mkp MB4  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &mkp MB4  &mkp MB5
+        &kp LGUI  &kp LALT  &kp LCTRL    &kp LSHFT    &mo 8          &mo 8        &kp LSHFT    &kp LCTRL    &kp LALT  &kp LGUI
+&trans  &mkp MB5  &mkp MB4  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &mkp MB4  &mkp MB5  &trans
+                            &mkp MCLK    &mkp LCLK    &mkp RCLK      &mkp RCLK    &mkp LCLK    &mkp MCLK
             >;
         };
     };
