@@ -51,11 +51,11 @@
         reg = <0>;
         spi-max-frequency = <2000000>;  // 2MHz SPI clock
         irq-gpios = <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // MOT P1.15 (Brown wire)
-        cpi = <600>;                    // 600 counts per inch
+        cpi = <800>;                    // 800 counts per inch
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        // xy-swap;                      // Maintain XY swapping without processor
+        xy-swap;                      // Maintain XY swapping without processor
 
         // Performance mode: force-high-performance
         // Note: force-awake can cause cursor warping/jumping - not recommended
