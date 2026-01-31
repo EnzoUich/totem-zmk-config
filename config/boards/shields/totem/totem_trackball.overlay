@@ -65,11 +65,16 @@
     };
 };
 
-&split_input {
-    trackball_split: trackball_split@1 {
-        compatible = "zmk,input-split";
-        reg = <1>;  // Unique ID for the trackball
-        device = <&trackball>;
+/ {
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+        
+        trackball_split: trackball_split@1 {
+            compatible = "zmk,input-split";
+            reg = <1>;  // Unique ID for the trackball
+            device = <&trackball>;
+        };
     };
 };
 
