@@ -29,12 +29,26 @@
         };
     };
 
+    /* Scroll mode processor - converts XY to scroll wheel */
+    zip_xy_to_scroll: zip_xy_to_scroll {
+        compatible = "zmk,input-processor-code-mapper";
+        #input-processor-cells = <0>;
+        type = <INPUT_EV_REL>;
+        map = <INPUT_REL_X INPUT_REL_HWHEEL>, <INPUT_REL_Y INPUT_REL_WHEEL>;
+    };
+
     /* Trackball listener - same layer-aware processing */
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
         // Optional: Add input processors (e.g., acceleration, rate limiting)
         // input-processors = <&pointer_accel>;/* 1x sensitivity + auto mouse layer */
-        input-processors = <&zip_xy_scaler 1 1>, <&zip_temp_layer 7 1000>;
+        input-processors = <&zip_xy_scaler 1 1>, <&zip_temp_layer 7 500>;
+        
+        /* Layer 8: Scroll mode - reduced sensitivity */
+        scroll {
+            layers = <8>;
+            input-processors = <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll>;
+        };
     };
 };
