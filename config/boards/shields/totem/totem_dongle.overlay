@@ -26,4 +26,12 @@
             reg = <1>;  // Must match the peripheral's reg value
         };
     };
+
+    /* Trackball listener - same layer-aware processing */
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball_split>;
+        // Optional: Add input processors (e.g., acceleration, rate limiting)
+        // input-processors = <&pointer_accel>;
+    };
 };
