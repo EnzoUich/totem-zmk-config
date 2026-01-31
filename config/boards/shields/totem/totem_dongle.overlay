@@ -5,6 +5,7 @@
  */
 
  #include "totem.dtsi"
+#include <input/processors/scaler.dtsi>
 
  &kscan0 {
      col-gpios
