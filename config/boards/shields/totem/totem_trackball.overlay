@@ -12,7 +12,7 @@
 // #include <dt-bindings/zmk/input_transform.h>
 // #include <behaviors/input_gestures_accel.dtsi>
 
-#include "totem.dtsi"
+// #include "totem.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 // ----------------------------------------------------------------------------
@@ -111,11 +111,11 @@
 / {
     chosen {
         // Mock keyboard scanner (no physical keys)
-        zmk,kscan = &mock_kscan;
+        zmk,kscan = &kscan0;
     };
 
     // Mock Keyboard Scanner Configuration
-    mock_kscan: mock_kscan_0 {
+    kscan0: kscan {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
