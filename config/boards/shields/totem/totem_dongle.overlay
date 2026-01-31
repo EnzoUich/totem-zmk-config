@@ -4,8 +4,9 @@
  * SPDX-License-Identifier: MIT
  */
 
- #include "totem.dtsi"
+#include "totem.dtsi"
 #include <input/processors/scaler.dtsi>
+#include <input/processors/temp_layer.dtsi>
 
  &kscan0 {
      col-gpios
