@@ -32,6 +32,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
         // Optional: Add input processors (e.g., acceleration, rate limiting)
-        // input-processors = <&pointer_accel>;
+        // input-processors = <&pointer_accel>;/* 1x sensitivity + auto mouse layer */
+        input-processors = <&zip_xy_scaler 1 1>, <&zip_temp_layer button_layer 1000>;
     };
 };
