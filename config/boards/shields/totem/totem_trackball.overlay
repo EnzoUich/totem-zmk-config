@@ -11,6 +11,8 @@
 // #include <input/processors/report_rate_limit.dtsi>
 // #include <dt-bindings/zmk/input_transform.h>
 // #include <behaviors/input_gestures_accel.dtsi>
+
+#include "totem.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 // ----------------------------------------------------------------------------
@@ -63,6 +65,14 @@
     };
 };
 
+&split_input {
+    trackball_split: trackball_split@1 {
+        compatible = "zmk,input-split";
+        reg = <1>;  // Unique ID for the trackball
+        device = <&trackball>;
+    };
+};
+
 // ----------------------------------------------------------------------------
 // Pointer Acceleration Configuration
 // ----------------------------------------------------------------------------
@@ -108,16 +118,16 @@
     };
 
     // Trackball Input Listener
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
+    // trackball_listener {
+    //     compatible = "zmk,input-listener";
+    //     device = <&trackball>;
         
-        // Input Processing Pipeline
-        // input-processors =
-        //     <&pointer_accel>,                          // Apply pointer acceleration
-        //     <&zip_ble_report_rate_limit 4>,           // Limit report rate to 4ms (250Hz)
-        //     <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>; // Swap X and Y axes
-    };
+    //     // Input Processing Pipeline
+    //     // input-processors =
+    //     //     <&pointer_accel>,                          // Apply pointer acceleration
+    //     //     <&zip_ble_report_rate_limit 4>,           // Limit report rate to 4ms (250Hz)
+    //     //     <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>; // Swap X and Y axes
+    // };
 };
 
 // ----------------------------------------------------------------------------
