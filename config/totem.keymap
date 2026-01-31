@@ -168,7 +168,17 @@
             display-name = "Button";
             bindings = <
         &kp K_AGAIN  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &kp K_AGAIN
-        &kp LGUI     &kp LALT    &kp LCTRL    &kp LSHFT    &none          &none        &kp LSHFT    &kp LCTRL    &kp LALT    &kp LGUI
+        &kp LGUI     &kp LALT    &kp LCTRL    &kp LSHFT    &mo 8          &none        &kp LSHFT    &kp LCTRL    &kp LALT    &kp LGUI
+&trans  &kp K_AGAIN  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &kp K_AGAIN  &trans
+                                 &mkp MCLK    &mkp LCLK    &mkp RCLK      &mkp RCLK    &mkp LCLK    &mkp MCLK
+            >;
+        };
+
+        scroll_layer {
+            display-name = "Scroll";
+            bindings = <
+        &kp K_AGAIN  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &kp K_AGAIN
+        &kp LGUI     &kp LALT    &kp LCTRL    &kp LSHFT    &mo 8          &none        &kp LSHFT    &kp LCTRL    &kp LALT    &kp LGUI
 &trans  &kp K_AGAIN  &kp K_UNDO  &kp LS(DEL)  &kp LC(INS)  &kp LS(INS)    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &kp K_AGAIN  &trans
                                  &mkp MCLK    &mkp LCLK    &mkp RCLK      &mkp RCLK    &mkp LCLK    &mkp MCLK
             >;
