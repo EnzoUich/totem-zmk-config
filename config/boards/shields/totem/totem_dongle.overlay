@@ -7,6 +7,7 @@
 #include "totem.dtsi"
 #include <input/processors/scaler.dtsi>
 #include <input/processors/temp_layer.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 
  &kscan0 {
      col-gpios
