@@ -36,12 +36,12 @@
         device = <&trackball_split>;
         // Optional: Add input processors (e.g., acceleration, rate limiting)
         // input-processors = <&pointer_accel>;/* 1x sensitivity + auto mouse layer */
-        input-processors = <&zip_xy_scaler 1 8>, <&zip_temp_layer 7 1000>;
+        input-processors = <&zip_xy_scaler 1 16>, <&zip_temp_layer 7 1000>;
         
         /* Layer 8: Scroll mode - reduced sensitivity */
         scroll {
             layers = <8>;
-            input-processors = <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
+            input-processors = <&zip_xy_scaler 1 16>, <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_xy_to_scroll_mapper>;
         };
     };
 };
