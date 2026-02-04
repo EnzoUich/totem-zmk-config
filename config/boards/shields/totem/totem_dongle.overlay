@@ -5,7 +5,6 @@
  */
 
 #include "totem.dtsi"
-#include <dt-bindings/zmk/input_transform.h>
 #include <input/processors/scaler.dtsi>
 #include <input/processors/temp_layer.dtsi>
 #include <input/processors.dtsi>
@@ -42,7 +41,7 @@
         /* Layer 8: Scroll mode - reduced sensitivity */
         scroll {
             layers = <8>;
-            input-processors = <&zip_xy_scaler 1 16>, <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_xy_to_scroll_mapper>;
+            input-processors = <&zip_xy_scaler -1 16>, <&zip_xy_to_scroll_mapper>;
         };
     };
 };
