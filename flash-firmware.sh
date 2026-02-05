@@ -7,6 +7,7 @@
 #   ./flash-firmware.sh dongle    # Flash dongle
 #   ./flash-firmware.sh left      # Flash left keyboard half
 #   ./flash-firmware.sh right     # Flash right keyboard half
+#   ./flash-firmware.sh trackball # Flash trackball
 #   ./flash-firmware.sh reset     # Flash settings reset
 
 set -e
@@ -31,6 +32,11 @@ case "$TARGET" in
         FIRMWARE=$(find "$OUTPUT_DIR" -name "*totem_right*.uf2" -type f | head -n 1)
         DEVICE_NAME="right keyboard half"
         ;;
+    trackball)
+        echo "Looking for totem_trackball firmware..."
+        FIRMWARE=$(find "$OUTPUT_DIR" -name "*totem_trackball*.uf2" -type f | head -n 1)
+        DEVICE_NAME="trackball"
+        ;;
     reset)
         echo "Looking for settings_reset firmware..."
         FIRMWARE=$(find "$OUTPUT_DIR" -name "*settings_reset*.uf2" -type f | head -n 1)
@@ -38,7 +44,7 @@ case "$TARGET" in
         ;;
     *)
         echo "Error: Unknown target '$TARGET'"
-        echo "Usage: ./flash-firmware.sh [dongle|left|right|reset]"
+        echo "Usage: ./flash-firmware.sh [dongle|left|right|trackball|reset]"
         exit 1
         ;;
 esac

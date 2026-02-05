@@ -110,6 +110,9 @@ Firmware is downloaded to `firmware/` directory.
 # Flash right keyboard half
 ./flash-firmware.sh right
 
+# Flash trackball
+./flash-firmware.sh trackball
+
 # Reset settings (clears all stored settings)
 ./flash-firmware.sh reset
 ```
