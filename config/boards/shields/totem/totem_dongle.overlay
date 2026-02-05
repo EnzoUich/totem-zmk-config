@@ -30,12 +30,6 @@
         };
     };
 
-    scroll_invert_x_transform: scroll_invert_x_transform {
-        compatible = "zmk,input-processor-transform";
-        label = "Scroll Invert X";
-        input-transform = <(0 - 1) 1 1 1>;
-    };
-
     /* Trackball listener - same layer-aware processing */
     trackball_listener {
         compatible = "zmk,input-listener";
@@ -47,7 +41,7 @@
         /* Layer 8: Scroll mode - reduced sensitivity */
         scroll {
             layers = <8>;
-            input-processors = <&zip_xy_scaler 1 16>, <&scroll_invert_x_transform>, <&zip_xy_to_scroll_mapper>;
+            input-processors = <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
         };
     };
 };
