@@ -33,7 +33,7 @@
     scroll_invert_x_transform: scroll_invert_x_transform {
         compatible = "zmk,input-processor-transform";
         label = "Scroll Invert X";
-        input-transform = <-1 1 1 1>;
+        input-transform = <(0 - 1) 1 1 1>;
     };
 
     /* Trackball listener - same layer-aware processing */
