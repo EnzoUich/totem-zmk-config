@@ -80,9 +80,11 @@
     combos {
         compatible = "zmk,combos";
 
-        caps_word {
+        shift_caps_word_combo {
             bindings = <&caps_word>;
             key-positions = <13 16>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <150>;
         };
     };
 
