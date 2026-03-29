@@ -105,8 +105,8 @@
             display-name = "Nav";
             bindings = <
         &trans    &trans    &trans     &trans     &trans    &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &kp K_AGAIN
-        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT   &caps_word
-&trans  &trans    &trans    &trans     &trans     &trans    &kp HOME     &kp PG_DN    &kp PG_UP    &kp END     &kp INS      &trans
+        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp CAPSLOCK &kp LEFT     &kp DOWN       &kp UP   &kp RIGHT
+&trans  &trans    &trans    &trans     &trans     &trans    &kp INS      &kp HOME     &kp PG_DN    &kp PG_UP    &kp END     &trans
                             &trans     &trans     &trans    &kp RET      &kp BSPC     &kp DEL
             >;
         };
