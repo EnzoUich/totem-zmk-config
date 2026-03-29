@@ -22,7 +22,8 @@
 #define SYM         5
 #define FUN         6
 #define BUTTON      7
-#define OW          8
+#define SCROLL      8
+#define OW          9
 
 // Key position definitions for 38-key Totem layout
 
@@ -137,7 +138,7 @@
             bindings = <
         &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &trans  &trans     &trans     &trans    &trans
         &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
-&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &trans  &trans     &trans     &trans    &trans    &to 9
+&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &trans  &trans     &trans     &trans    &trans    &to OW
                            &kp DOT  &kp N0  &kp MINUS    &trans  &trans     &trans
             >;
         };
