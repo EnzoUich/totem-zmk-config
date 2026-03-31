@@ -24,6 +24,7 @@
 #define BUTTON      7
 #define SCROLL      8
 #define OW          9
+#define GALLIUM     10
 
 // Key position definitions for 38-key Totem layout
 
@@ -108,9 +109,9 @@
         nav_layer {
             display-name = "Nav";
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO
-        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &caps_word   &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT
-&trans  &trans    &trans    &trans     &trans     &trans    &kp INS      &kp HOME     &kp PG_DN    &kp PG_UP    &kp END     &trans
+            &trans    &trans    &trans     &trans     &trans    &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO
+            &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &caps_word   &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT
+&to GALLIUM &trans    &trans    &trans     &trans     &trans    &kp INS      &kp HOME     &kp PG_DN    &kp PG_UP    &kp END     &trans
                             &trans     &trans     &trans    &kp RET      &kp BSPC     &kp DEL
             >;
         };
@@ -192,6 +193,16 @@
        &kp LSHIFT     &kp A        &kp S          &kp D          &kp H            &kp H        &kp J         &kp K         &kp L        &kp SQT
 &kp F1 &kp LCTRL      &kp Z        &kp X          &kp C          &kp V            &kp N        &kp M         &kp COMMA     &kp DOT      &kp SLASH   &to BASE
                                    &kp LALT  &kp SPACE  &kp TAB    &kp RET  &kp BSPC  &kp ESC
+            >;
+        };
+
+        gallium_layer {
+            display-name = "Gallium";
+            bindings = <
+       &kp B        &kp L        &kp D          &kp C          &kp V            &kp J        &kp Y         &kp O         &kp U        &kp COMMA
+       &hml LGUI N  &hml LALT R  &hml LCTRL T   &hml LSHFT S   &kp G            &kp P        &hmr RSHFT H  &hmr RCTRL A  &hmr RALT E  &hmr RGUI I
+&none  &kp X        &kp Q        &kp M          &kp W          &kp Z            &kp K        &kp F         &kp SQT       &kp SEMI     &kp DOT     &to BASE
+                                 &lt MEDIA ESC  &lt NAV SPACE  &lt MOUSE TAB    &lt SYM RET  &lt NUM BSPC  &lt FUN DEL
             >;
         };
     };
